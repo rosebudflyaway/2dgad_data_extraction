@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with jLaTeX2HTML 2002-2-1 (1.70) JA patch-2.0
+patched version by:  Kenshi Muto, Debian Project.
+* modified by:  Shige TAKENO
+LaTeX2HTML 2002-2-1 (1.70),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Using PFWiz</TITLE>
+<META NAME="description" CONTENT="Using PFWiz">
+<META NAME="keywords" CONTENT="pfwiz">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002-2-1 JA patch-2.0">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="pfwiz.css">
+
+</HEAD>
+
+<BODY >
+
+<H1><A NAME="SECTION00010000000000000000">
+Using <TT>PFWiz</TT></A>
+</H1>
+
+<P>
+The Particle Filter Toolbox in MATLAB, <TT>PFLib</TT>, contains a
+collection of Particle Filters implemented as MATLAB classes, together
+with supporting functions such as those for resampling. One can write
+MATLAB code using these classes by following <TT>PFLib</TT>'s
+API. Alternatively, one can use this <TT>PFWiz</TT> to specify system and
+parameter, and let <TT>PFWiz</TT> automatically generate corresponding
+MATLAB code.
+
+<P>
+Current version of <TT>PFLib</TT> supports system models assumed by a
+filter in the following form:
+<BR>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<!-- MATH
+ \begin{eqnarray*}
+x(k+1) &=& f(x(k)) + w(k), \\
+y(k) &=& h(x(k)) + v(k),
+\end{eqnarray*}
+ -->
+<TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><I>x</I>(<I>k</I> + 1)</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP>=</TD>
+<TD ALIGN="LEFT" NOWRAP><I>f</I> (<I>x</I>(<I>k</I>)) + <I>w</I>(<I>k</I>),</TD>
+<TD CLASS="eqno" WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><I>y</I>(<I>k</I>)</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP>=</TD>
+<TD ALIGN="LEFT" NOWRAP><I>h</I>(<I>x</I>(<I>k</I>)) + <I>v</I>(<I>k</I>),</TD>
+<TD CLASS="eqno" WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL">
+
+where <SPAN CLASS="MATH"><I>f</I> (<SUP> . </SUP>)</SPAN> and <SPAN CLASS="MATH"><I>h</I>(<SUP> . </SUP>)</SPAN> are nonlinear functions and <SPAN CLASS="MATH"><I>w</I></SPAN> and
+<SPAN CLASS="MATH"><I>v</I></SPAN> are noises whose distributions are such that we can sample from
+them and evaluate probability densities. These are to be specified in
+the next screen of the GUI, followed by another screen to specify
+filter choices. 
+
+<P>
+Simply click <TT>Next</TT> to continue.
+
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

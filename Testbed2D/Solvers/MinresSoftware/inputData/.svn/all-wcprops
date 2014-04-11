@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/184/simulator/engine/solvers/MinresSoftware/inputData
+END
+dump_Cq.dat
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/184/simulator/engine/solvers/MinresSoftware/inputData/dump_Cq.dat
+END
+dump_v_old.dat
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/184/simulator/engine/solvers/MinresSoftware/inputData/dump_v_old.dat
+END
+dump_fric.dat
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/184/simulator/engine/solvers/MinresSoftware/inputData/dump_fric.dat
+END
+dump_E.dat
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/184/simulator/engine/solvers/MinresSoftware/inputData/dump_E.dat
+END
+dump_f.dat
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/184/simulator/engine/solvers/MinresSoftware/inputData/dump_f.dat
+END
+dump_solved_l.dat
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/184/simulator/engine/solvers/MinresSoftware/inputData/dump_solved_l.dat
+END
+1000B_r2_f0.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/184/simulator/engine/solvers/MinresSoftware/inputData/1000B_r2_f0.bmp
+END
+dump_M.dat
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/184/simulator/engine/solvers/MinresSoftware/inputData/dump_M.dat
+END
+dump_solved_q.dat
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/184/simulator/engine/solvers/MinresSoftware/inputData/dump_solved_q.dat
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/184/simulator/engine/solvers/MinresSoftware/inputData/README.txt
+END
+dump_b.dat
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/184/simulator/engine/solvers/MinresSoftware/inputData/dump_b.dat
+END
+test_1000_r2_f0_pos0201.vtk
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/184/simulator/engine/solvers/MinresSoftware/inputData/test_1000_r2_f0_pos0201.vtk
+END

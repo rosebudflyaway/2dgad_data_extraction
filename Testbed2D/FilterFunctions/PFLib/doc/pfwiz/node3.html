@@ -1,0 +1,164 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with jLaTeX2HTML 2002-2-1 (1.70) JA patch-2.0
+patched version by:  Kenshi Muto, Debian Project.
+* modified by:  Shige TAKENO
+LaTeX2HTML 2002-2-1 (1.70),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Choosing a filter</TITLE>
+<META NAME="description" CONTENT="Choosing a filter">
+<META NAME="keywords" CONTENT="pfwiz">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002-2-1 JA patch-2.0">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="pfwiz.css">
+
+</HEAD>
+
+<BODY >
+
+<H1><A NAME="SECTION00030000000000000000">
+Choosing a filter</A>
+</H1>
+
+<P>
+In this screen you will be asked to choose a filter of certain type,
+and specify the necessary parameters. When a filter type is chosen
+from a drop-down list, only fields that are relevant for its parameter
+specification are shown.
+
+<P>
+These are the filter types that have been implemented:
+
+<UL>
+<LI><B>EKF:</B> Extended Kalman Filter. Parameters needed: Initial
+distribution of <SPAN CLASS="MATH"><I>x</I></SPAN>, and the
+Jacobians <!-- MATH
+ $\partial f / \partial x$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.gif"
+ ALT="$ \partial$"><I>f</I> /<IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.gif"
+ ALT="$ \partial$"><I>x</I></SPAN> and <!-- MATH
+ $\partial h / \partial
+x$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.gif"
+ ALT="$ \partial$"><I>h</I>/<IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.gif"
+ ALT="$ \partial$"><I>x</I></SPAN>. These functions are specified either by a script name or as an anonymous
+function. 
+</LI>
+<LI><B>PF - Simple: </B> Particles propagate according to the state
+transition equation. Parameters needed: number of particles,
+resampling period, resampling algorithm, initial distribution of the
+particles. 
+</LI>
+<LI><B>PF - EKF: </B> Particles propagate according to a proposal
+distribution. The proposal is obtained through an EKF-like procedure
+which takes into account the current observation. Parameters needed in
+addtion to those for <TT>PF - Simple</TT>: the Jacobian <!-- MATH
+ $\partial h /
+\partial x$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.gif"
+ ALT="$ \partial$"><I>h</I>/<IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.gif"
+ ALT="$ \partial$"><I>x</I></SPAN>. Note that unlike in EKF, the Jacobian <!-- MATH
+ $\partial f /
+\partial x$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.gif"
+ ALT="$ \partial$"><I>f</I> /<IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.gif"
+ ALT="$ \partial$"><I>x</I></SPAN> is not needed, since the proposal is <EM>conditioned on</EM>
+the previous value of <SPAN CLASS="MATH"><I>x</I></SPAN>, as opposed to <EM>propagated from</EM> the
+previous Gaussian approximation. 
+</LI>
+<LI><B>PF - Regularized: </B> Roughtly speaking, in representing the
+filtered density, the delta function at each particle
+location is replaced by a continuous kernel function. Parameters
+needed in addition to those for <TT>PF - Simple</TT> are: 
+
+<UL>
+<LI>type: when regularization is performed. For details, see Project
+Report.
+</LI>
+<LI>whitening: whether to perform whitening on the particles. For
+details, see Project Report.
+</LI>
+<LI>width: kernel width, whose ``optimal'' value (as a function of
+state dimension and number of particles) is filled into the edit box
+by <TT>PFWiz</TT>. It can be changed by a user.  For details, see Project
+Report.
+</LI>
+</UL>
+</LI>
+<LI><B>PF - Auxilliary Variable: </B> Roughly speaking, this filter
+approximates, using local Monte Carlo method, the ``optimal'' proposal
+density that cannot be directly sampled from. Resampling is
+automatically achieved in this implementation. Parameters needed:
+Number of particles and their initial distribution. 
+</LI>
+</UL>
+
+<P>
+The following resampling schemes are available:
+
+<UL>
+<LI><B>none:</B> No resampling.
+</LI>
+<LI><B>simple:</B> Resampling is performed using the weights.
+</LI>
+<LI><B>residual: </B> Resampling is performed using the residual of
+the weights, after the ``bulk part'' has been deterministically
+chosen. 
+</LI>
+<LI><B>systematic: </B> Only one random number is drawn, and
+resampling is achieved by a set of points that are equally spaced from
+this random number. 
+</LI>
+<LI><B>branch-kill: </B> The resampling of each particle is
+independent, therefore the total number of particles is not fixed. An
+additional parameter, <TT>branch-kill threshold</TT>, needs to be
+specified: When the total number of particles drops below this
+percentage, a simple resampling is performed to bring it back to  the
+initially chosen value.
+</LI>
+</UL>
+
+<P>
+Resampling can be performed every <SPAN CLASS="MATH"><I>d</I></SPAN> step, where <SPAN CLASS="MATH"><I>d</I></SPAN> is specified in
+the <TT>resampling period</TT> box.
+
+<P>
+As in the previous screen, the <TT>Show code</TT> button does error checking
+and presents the code in an editor window. If the button <TT>Done</TT> is
+clicked, a confirmation window pops up to confirm the closing of <TT>PFWiz</TT>. The editor window will remain open showing the code
+generated. 
+
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

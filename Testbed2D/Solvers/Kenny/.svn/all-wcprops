@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/328/simulator/engine/solvers/Kenny
+END
+pgs.m
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/104/simulator/engine/solvers/Kenny/pgs.m
+END
+minmap_newton.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/104/simulator/engine/solvers/Kenny/minmap_newton.m
+END
+fischer_newton.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/274/simulator/engine/solvers/Kenny/fischer_newton.m
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/105/simulator/engine/solvers/Kenny/README.txt
+END
+multilevel.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/104/simulator/engine/solvers/Kenny/multilevel.m
+END
+psor.m
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/104/simulator/engine/solvers/Kenny/psor.m
+END
+ip_lcp.m
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/328/simulator/engine/solvers/Kenny/ip_lcp.m
+END

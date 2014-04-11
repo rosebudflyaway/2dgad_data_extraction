@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with jLaTeX2HTML 2002-2-1 (1.70) JA patch-2.0
+patched version by:  Kenshi Muto, Debian Project.
+* modified by:  Shige TAKENO
+LaTeX2HTML 2002-2-1 (1.70),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Specifying system information</TITLE>
+<META NAME="description" CONTENT="Specifying system information">
+<META NAME="keywords" CONTENT="pfwiz">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002-2-1 JA patch-2.0">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="pfwiz.css">
+
+</HEAD>
+
+<BODY >
+
+<H1><A NAME="SECTION00020000000000000000">
+Specifying system information</A>
+</H1>
+
+<P>
+In this screen you will be asked to specify the system model that your
+filter assumes. (Note that this may be different from the system model that you
+use for other purposes, for example, simulating the system trajectory.)
+
+<P>
+
+<UL>
+<LI><B>dimensions: </B> The dimensions of the signal <SPAN CLASS="MATH"><I>x</I></SPAN> and
+observation <SPAN CLASS="MATH"><I>y</I></SPAN>.
+</LI>
+<LI><B>initial condition: </B> The initial condition of the signal
+<SPAN CLASS="MATH"><I>x</I></SPAN>. Can be any valid MATLAB expression (that can be evaluated in the
+current workspace). 
+</LI>
+<LI><B>functions: </B> The signal transition function <SPAN CLASS="MATH"><I>f</I> (<SUP> . </SUP>)</SPAN> and
+the observation function <SPAN CLASS="MATH"><I>h</I>(<SUP> . </SUP>)</SPAN>. There are two ways to specify a
+function, determined by the selection in the <TT>type</TT> panel:
+
+<UL>
+<LI><B>script: </B> The function is stored in a MATLAB script. You
+can type the function name (which should be on your current MATLAB path) into the edit
+box, or you can click on the <TT>Browse</TT> button to select the file.
+</LI>
+<LI><B>anonymous:</B> The function is <EM>not</EM> stored in a file but
+is an anonymous function whose expression you will type into the edit
+box. As an example, suppose <!-- MATH
+ $x = [x_1, x_2]^T$
+ -->
+<SPAN CLASS="MATH"><I>x</I> = [<I>x</I><SUB>1</SUB>, <I>x</I><SUB>2</SUB>]<SUP>T</SUP></SPAN>, and the function
+<SPAN CLASS="MATH"><I>f</I> (<SUP> . </SUP>)</SPAN> is
+<!-- MATH
+ \begin{displaymath}
+f(x) = [\sin(x_1),  \cos(x_2)]^T,
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<I>f</I> (<I>x</I>) = [sin(<I>x</I><SUB>1</SUB>), cos(<I>x</I><SUB>2</SUB>)]<SUP>T</SUP>,
+</DIV><P></P>
+then it can be specified as
+<PRE>
+	@(x) [sin(x(1));  cos(x(2))]
+</PRE>
+
+<P>
+</LI>
+</UL>
+
+<P>
+</LI>
+<LI><B>noises: </B> Noise distribution can be selected from a
+drop-down list of currently implemented ones. For Gaussian
+distribution, <TT>mean</TT> and <TT>covariance</TT> boxes can have any valid
+MATLAb expression (that can be evaluated in the current workspace),
+e.g., <TT>eye(2)</TT>. 
+
+<P>
+</LI>
+</UL>
+
+<P>
+Click on the <TT>Show code</TT> button, and one of two things happen:
+
+<UL>
+<LI>If there is no error, a MATLAb editor window will pop up to show
+the code that can be generated so far. You do not have to save the
+code right now, since you can do so in the next screen, after you choose your
+filter.
+</LI>
+<LI>An error message pops up. It usually tells you where the mistake
+is. Sources of errors can be
+
+<UL>
+<LI>Unfilled field.
+</LI>
+<LI>Invalid MATLAB expression.
+</LI>
+<LI>Function specified not on MATLAB path.
+</LI>
+<LI>Conflicting specifications, e.g., sizes of <SPAN CLASS="MATH"><I>x</I></SPAN> and <SPAN CLASS="MATH"><I>f</I> (<SUP> . </SUP>)</SPAN>
+mismatch. 
+</LI>
+<LI>The <TT>Uniform</TT> distribution has not been implemented yet;
+do not choose it. 
+</LI>
+</UL>
+
+<P>
+</LI>
+</UL>
+
+<P>
+The same error checking will also be done when you click on the <TT>Next</TT> button.
+
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

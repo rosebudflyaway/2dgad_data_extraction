@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pref name="/">
+	
+   
+   <pref name="active_scene" type="string" value="dakota"/>
+	
+   
+   <pref name="assets_root" type="string" value="/gpfs/small/SDRG/shared/DVC/build/share/dvc/data/"/>
+	
+   
+   <pref name="plugins_dir" type="string" value="/gpfs/small/SDRG/shared/DVC/build/lib/dvc-plugins/"/>
+	
+   
+   <pref name="app_plugin" type="string" value="dakotaApp"/>
+	
+   
+   <pref name="start_paused" type="bool" value="1"/>
+	
+   
+   <pref name="use_logging" type="bool" value="1"/>
+	
+   
+   <pref name="screenshot_directory" type="string" value="./"/>
+	
+   
+   <pref name="screenshot_label" type="string" value="frame"/>
+	
+   
+   <pref name="screenshot_type" type="int" value="1"/>
+	
+   
+   <pref name="plugins">
+		
+      
+      <pref name="timestepper">
+			
+         
+         <pref name="ST_MCP">
+				
+            
+            <pref name="filename" type="string" value="stewarttrinkle_mcp"/>
+				
+            
+            <pref name="restitutionCoefficent" type="double" value="0.6"/>
+				
+            
+            <pref name="surfaceFrictionCoefficent" type="double" value="0.999997"/>
+				
+            
+            <pref name="numSurfaceFrictionDirections" type="int" value="16"/>
+				
+            
+            <pref name="errorCorrectionParam" type="double" value="1"/>
+				
+            
+            <pref name="useSparseMatrix" type="bool" value="1"/>
+				
+            
+            <pref name="auto_load" type="bool" value="1"/>
+			
+         
+         </pref>
+			
+         
+         <pref name="ST25D">
+				
+            
+            <pref name="filename" type="string" value="stewarttrinkle_25d"/>
+				
+            
+            <pref name="restitutionCoefficent" type="double" value="0"/>
+				
+            
+            <pref name="surfaceFrictionCoefficent" type="double" value="0.82084"/>
+				
+            
+            <pref name="numSurfaceFrictionDirections" type="int" value="16"/>
+				
+            
+            <pref name="positionControlledFrictionCoefficent" type="double" value="0.9"/>
+				
+            
+            <pref name="errorCorrectionParam" type="double" value="1"/>
+				
+            
+            <pref name="useSparseMatrix" type="bool" value="1"/>
+				
+            
+            <pref name="useLogging" type="bool" value="0"/>
+				
+            
+            <pref name="auto_load" type="bool" value="1"/>
+			
+         
+         </pref>
+			
+         
+         <pref name="ST25DNCP">
+				
+            
+            <pref name="filename" type="string" value="st_25d_ncp"/>
+				
+            
+            <pref name="restitutionCoefficent" type="double" value="0"/>
+				
+            
+            <pref name="surfaceFrictionCoefficent" type="double" value="0.82084"/>
+				
+            
+            <pref name="positionControlledFrictionCoefficent" type="double" value="0.9"/>
+				
+            
+            <pref name="errorCorrectionParam" type="double" value="1"/>
+				
+            
+            <pref name="useLogging" type="bool" value="0"/>
+				
+            
+            <pref name="auto_load" type="bool" value="1"/>
+			
+         
+         </pref>
+			
+         
+         <pref name="ST25D_QUASI">
+				
+            
+            <pref name="filename" type="string" value="st_25d_quasistatic"/>
+				
+            
+            <pref name="restitutionCoefficent" type="double" value="0"/>
+				
+            
+            <pref name="surfaceFrictionCoefficent" type="double" value="0.2"/>
+				
+            
+            <pref name="numSurfaceFrictionDirections" type="int" value="16"/>
+				
+            
+            <pref name="positionControlledFrictionCoefficent" type="double" value="0.1"/>
+				
+            
+            <pref name="errorCorrectionParam" type="double" value="1"/>
+				
+            
+            <pref name="useSparseMatrix" type="bool" value="1"/>
+				
+            
+            <pref name="auto_load" type="bool" value="1"/>
+			
+         
+         </pref>
+			
+         
+         <pref name="ST_QUASI">
+				
+            
+            <pref name="filename" type="string" value="stewarttrinklequasistatic_mcp"/>
+				
+            
+            <pref name="useSparseMatrix" type="bool" value="1"/>
+			
+         
+         </pref>
+			
+         
+         <pref name="SPK">
+				
+            
+            <pref name="filename" type="string" value="songpangkumar"/>
+				
+            
+            <pref name="SPK_number_spring" type="int" value="1"/>
+				
+            
+            <pref name="SPK_epsilon" type="double" value="1e-06"/>
+				
+            
+            <pref name="SPK_psi" type="double" value="1"/>
+				
+            
+            <pref name="SPK_psi_t" type="double" value="0"/>
+			
+         
+         </pref>
+			
+         
+         <pref name="AP97">
+				
+            
+            <pref name="filename" type="string" value="anitescupotra97"/>
+				
+            
+            <pref name="restitutionCoefficent" type="double" value="0"/>
+			
+         
+         </pref>
+			
+         
+         <pref name="KevinEgan">
+				
+            
+            <pref name="filename" type="string" value="kevinegan"/>
+				
+            
+            <pref name="restitutionCoefficent" type="double" value="0"/>
+				
+            
+            <pref name="errorCorrectionParam" type="double" value="1"/>
+				
+            
+            <pref name="useNewMethod" type="bool" value="0"/>
+				
+            
+            <pref name="oldMethodEpsilon" type="double" value="0"/>
+			
+         
+         </pref>
+		
+      
+      </pref>
+		
+      
+      <pref name="collision">
+			
+         
+         <pref name="polypoly">
+				
+            
+            <pref name="filename" type="string" value="polypoly"/>
+			
+         
+         </pref>
+			
+         
+         <pref name="polypoly_Nonconvex">
+				
+            
+            <pref name="filename" type="string" value="polypoly_nonconvex"/>
+			
+         
+         </pref>
+			
+         
+         <pref name="benPQP">
+				
+            
+            <pref name="filename" type="string" value="benpqpcollision"/>
+			
+         
+         </pref>
+		
+      
+      </pref>
+		
+      
+      <pref name="cpsolver">
+			
+         
+         <pref name="pathsolver">
+				
+            
+            <pref name="filename" type="string" value="pathsolver"/>
+				
+            
+            <pref name="license_filepath" type="string" value="PathLicense.txt"/>
+			
+         
+         </pref>
+			
+         
+         <pref name="pathsolverncp">
+				
+            
+            <pref name="filename" type="string" value="pathsolverncp"/>
+				
+            
+            <pref name="license_filepath" type="string" value="PathLicense.txt"/>
+			
+         
+         </pref>
+		
+      
+      </pref>
+	
+   
+   </pref>
+	
+   
+   <pref name="scenes">
+		
+      
+      <pref name="dakota">
+			
+         
+         <pref name="timestepper" type="string" value="ST25DNCP"/>
+			
+         
+         <pref name="collision" type="string" value="polypoly"/>
+			
+         
+         <pref name="cpsolver" type="string" value="pathsolverncp"/>
+			
+         
+         <pref name="dynamics_settings">
+				
+            
+            <pref name="friction_coefficient" type="double" value="0"/>
+				
+            
+            <pref name="time_step" type="double" value="0.0033333"/>
+				
+            
+            <pref name="gravity" type="double" value="9810"/>
+				
+            
+            <pref name="collision_epsilon" type="double" value="1e-05"/>
+			
+         
+         </pref>
+			
+         
+         <pref name="screen_settings">
+				
+            
+            <pref name="view_distance" type="double" value="500"/>
+				
+            
+            <pref name="x_trans" type="double" value="100"/>
+				
+            
+            <pref name="y_trans" type="double" value="100"/>
+				
+            
+            <pref name="point_size" type="double" value="5"/>
+				
+            
+            <pref name="point_radius" type="double" value="5"/>
+				
+            
+            <pref name="cg_radius" type="double" value="5"/>
+				
+            
+            <pref name="draw_debug" type="bool" value="0"/>
+				
+            
+            <pref name="draw_grid" type="bool" value="1"/>
+				
+            
+            <pref name="grid_width" type="double" value="500"/>
+				
+            
+            <pref name="grid_height" type="double" value="500"/>
+				
+            
+            <pref name="grid_tick" type="double" value="10"/>
+				
+            
+            <pref name="extrude_height" type="double" value="1"/>
+			
+         
+         </pref>
+			
+         
+         <pref name="geometry">
+				
+            
+            <pref name="fixel1">
+					
+               
+               <pref name="vert_data_file" type="string" value="Geometry/dakota_fixel.pdat"/>
+					
+               
+               <pref name="color">
+						
+                  
+                  <pref name="r" type="double" value="0"/>
+						
+                  
+                  <pref name="g" type="double" value="1"/>
+						
+                  
+                  <pref name="b" type="double" value="0"/>
+						
+                  
+                  <pref name="a" type="double" value="1"/>
+					
+               
+               </pref>
+					
+               
+               <pref name="initialPosition">
+						
+                  
+                  <pref name="x" type="double" value="97.8918"/>
+						
+                  
+                  <pref name="y" type="double" value="57.286"/>
+						
+                  
+                  <pref name="t" type="double" value="51.0794"/>
+					
+               
+               </pref>
+				
+            
+            </pref>
+				
+            
+            <pref name="fixel2">
+					
+               
+               <pref name="vert_data_file" type="string" value="Geometry/dakota_fixel.pdat"/>
+					
+               
+               <pref name="color">
+						
+                  
+                  <pref name="r" type="double" value="0"/>
+						
+                  
+                  <pref name="g" type="double" value="1"/>
+						
+                  
+                  <pref name="b" type="double" value="0"/>
+						
+                  
+                  <pref name="a" type="double" value="1"/>
+					
+               
+               </pref>
+					
+               
+               <pref name="initialPosition">
+						
+                  
+                  <pref name="x" type="double" value="13.2729"/>
+						
+                  
+                  <pref name="y" type="double" value="75.4409"/>
+						
+                  
+                  <pref name="t" type="double" value="51.0794"/>
+					
+               
+               </pref>
+				
+            
+            </pref>
+				
+            
+            <pref name="fixel3">
+					
+               
+               <pref name="vert_data_file" type="string" value="Geometry/dakota_fixel.pdat"/>
+					
+               
+               <pref name="color">
+						
+                  
+                  <pref name="r" type="double" value="-10"/>
+						
+                  
+                  <pref name="g" type="double" value="1"/>
+						
+                  
+                  <pref name="b" type="double" value="0"/>
+						
+                  
+                  <pref name="a" type="double" value="1"/>
+					
+               
+               </pref>
+					
+               
+               <pref name="initialPosition">
+						
+                  
+                  <pref name="x" type="double" value="135.1241"/>
+						
+                  
+                  <pref name="y" type="double" value="151.4267"/>
+						
+                  
+                  <pref name="t" type="double" value="51.0794"/>
+					
+               
+               </pref>
+				
+            
+            </pref>
+				
+            
+            <pref name="shape">
+					
+               
+               <pref name="vert_data_file" type="string" value="Geometry/dakota_shape1.pdat"/>
+					
+               
+               <pref name="mass" type="double" value="0.2564"/>
+					
+               
+               <pref name="momentOfInertia" type="double" value="487.43"/>
+					
+               
+               <pref name="support_point_radial_distance" type="double" value="0"/>
+					
+               
+               <pref name="color">
+						
+                  
+                  <pref name="r" type="double" value="1"/>
+						
+                  
+                  <pref name="g" type="double" value="0"/>
+						
+                  
+                  <pref name="b" type="double" value="0"/>
+						
+                  
+                  <pref name="a" type="double" value="1"/>
+					
+               
+               </pref>
+					
+               
+               <pref name="initialVelocity">
+						
+                  
+                  <pref name="x" type="double" value="0"/>
+						
+                  
+                  <pref name="y" type="double" value="0"/>
+						
+                  
+                  <pref name="t" type="double" value="0"/>
+					
+               
+               </pref>
+					
+               
+               <pref name="initialPosition">
+						
+                  
+                  <pref name="x" type="double" value="63.0831"/>
+						
+                  
+                  <pref name="y" type="double" value="165.2121"/>
+						
+                  
+                  <pref name="t" type="double" value="-0.33805"/>
+					
+               
+               </pref>
+					
+               
+               <pref name="geomToBodyTransform">
+						
+                  
+                  <pref name="x" type="double" value="0"/>
+						
+                  
+                  <pref name="y" type="double" value="0"/>
+						
+                  
+                  <pref name="t" type="double" value="0"/>
+					
+               
+               </pref>
+				
+            
+            </pref>
+				
+            
+            <pref name="actuator">
+					
+               
+               <pref name="is_kinematical" type="bool" value="1"/>
+					
+               
+               <pref name="vert_data_file" type="string" value="Geometry/dakota_actuator_0.000_100.000.pdat"/>
+					
+               
+               <pref name="color">
+						
+                  
+                  <pref name="r" type="double" value="0"/>
+						
+                  
+                  <pref name="g" type="double" value="1"/>
+						
+                  
+                  <pref name="b" type="double" value="0"/>
+						
+                  
+                  <pref name="a" type="double" value="1"/>
+					
+               
+               </pref>
+					
+               
+               <pref name="initialPosition">
+						
+                  
+                  <pref name="x" type="double" value="58.3593"/>
+						
+                  
+                  <pref name="y" type="double" value="268.0127"/>
+						
+                  
+                  <pref name="t" type="double" value="29.8196"/>
+					
+               
+               </pref>
+				
+            
+            </pref>
+			
+         
+         </pref>
+		
+      
+      </pref>
+	
+   
+   </pref>
+	
+   
+   <pref name="screen_settings">
+		
+      
+      <pref name="width" type="int" value="1024"/>
+		
+      
+      <pref name="height" type="int" value="768"/>
+		
+      
+      <pref name="title" type="string" value="DVC"/>
+		
+      
+      <pref name="subtitle" type="string" value="dakota App"/>
+		
+      
+      <pref name="framerate" type="int" value="60"/>
+		
+      
+      <pref name="color_bits" type="int" value="32"/>
+		
+      
+      <pref name="r" type="double" value="0.2"/>
+		
+      
+      <pref name="g" type="double" value="0.2"/>
+		
+      
+      <pref name="b" type="double" value="0.2"/>
+		
+      
+      <pref name="a" type="double" value="1"/>
+	
+   
+   </pref>
+	
+   
+   <pref name="Gui">
+		
+      
+      <pref name="treepath" type="string" value="0:1:0:2:0"/>
+		
+      
+      <pref name="fontfile" type="string" value="font.ttf"/>
+	
+   
+   </pref>
+	
+   
+   <pref name="dynamic_settings_ptr" type="generic" value="0"/>
+	
+   
+   <pref name="cp_solver_ptr" type="generic" value="0"/>
+
+
+</pref>

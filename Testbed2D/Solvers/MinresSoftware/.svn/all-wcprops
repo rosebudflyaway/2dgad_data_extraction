@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/184/simulator/engine/solvers/MinresSoftware
+END
+dump_f.dat
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/184/simulator/engine/solvers/MinresSoftware/dump_f.dat
+END
+selectionMat.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/184/simulator/engine/solvers/MinresSoftware/selectionMat.m
+END
+solve_shur_P_GPMinres.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/184/simulator/engine/solvers/MinresSoftware/solve_shur_P_GPMinres.m
+END
+Aset.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/184/simulator/engine/solvers/MinresSoftware/Aset.m
+END
+projectedGradient.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/184/simulator/engine/solvers/MinresSoftware/projectedGradient.m
+END
+dump_solved_q.dat
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/184/simulator/engine/solvers/MinresSoftware/dump_solved_q.dat
+END
+create_system_from_dumps.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/184/simulator/engine/solvers/MinresSoftware/create_system_from_dumps.m
+END
+dump_b.dat
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/184/simulator/engine/solvers/MinresSoftware/dump_b.dat
+END
+dump_Cq.dat
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/184/simulator/engine/solvers/MinresSoftware/dump_Cq.dat
+END
+main.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/184/simulator/engine/solvers/MinresSoftware/main.m
+END
+dump_v_old.dat
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/184/simulator/engine/solvers/MinresSoftware/dump_v_old.dat
+END
+dump_fric.dat
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/184/simulator/engine/solvers/MinresSoftware/dump_fric.dat
+END
+obj_func.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/184/simulator/engine/solvers/MinresSoftware/obj_func.m
+END
+projectOp.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/184/simulator/engine/solvers/MinresSoftware/projectOp.m
+END

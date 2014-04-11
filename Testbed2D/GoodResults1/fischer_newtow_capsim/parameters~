@@ -1,0 +1,26 @@
+fischer newton capsim
+
+expID = 138; 
+objID = 18; 
+actID = 13; 
+
+
+sMu = systemParameters.Us;
+Mu1 = systemParameters.Up;
+Mu2 = systemParameters.Uf;
+d = systemParameters.Rtri;
+
+% results = [results; muP, muF, triRadius, muS, err];
+
+optimalParams =  muP,     muF,     triRadius,    muS
+                0.4000   0.2000     45.0000     0.6000
+
+
+
+Simulation done
+The minimum error is: 5.488676
+The optimal parametrs are: 
+
+optimalParams =
+
+    0.1000    0.8000    5.0000    0.1000

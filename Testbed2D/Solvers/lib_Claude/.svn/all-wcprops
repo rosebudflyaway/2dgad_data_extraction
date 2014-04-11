@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/184/simulator/engine/solvers/lib_Claude
+END
+li_fukushima_newton.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/184/simulator/engine/solvers/lib_Claude/li_fukushima_newton.m
+END
+block_switch.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/184/simulator/engine/solvers/lib_Claude/block_switch.m
+END
+rand_lcp_chen.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/184/simulator/engine/solvers/lib_Claude/rand_lcp_chen.m
+END
+rand_blcp_chen.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/184/simulator/engine/solvers/lib_Claude/rand_blcp_chen.m
+END
+solve_subproblem.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/184/simulator/engine/solvers/lib_Claude/solve_subproblem.m
+END
+test_random_problems.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/184/simulator/engine/solvers/lib_Claude/test_random_problems.m
+END
+cycle_resolution.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/184/simulator/engine/solvers/lib_Claude/cycle_resolution.m
+END
+get_complementarity_point.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/184/simulator/engine/solvers/lib_Claude/get_complementarity_point.m
+END
+get_complementarity_error.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/184/simulator/engine/solvers/lib_Claude/get_complementarity_error.m
+END
+zhang_gao_smoothing.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/184/simulator/engine/solvers/lib_Claude/zhang_gao_smoothing.m
+END
+runme.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/184/simulator/engine/solvers/lib_Claude/runme.m
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/184/simulator/engine/solvers/lib_Claude/LICENSE
+END
+comparison_plots.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/184/simulator/engine/solvers/lib_Claude/comparison_plots.m
+END
+boxed_block_pivot.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/184/simulator/engine/solvers/lib_Claude/boxed_block_pivot.m
+END
+cycle_detection.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/184/simulator/engine/solvers/lib_Claude/cycle_detection.m
+END
+rand_ortho.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/184/simulator/engine/solvers/lib_Claude/rand_ortho.m
+END
+split_indicies.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/184/simulator/engine/solvers/lib_Claude/split_indicies.m
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/184/simulator/engine/solvers/lib_Claude/README
+END
+rand_chen_matrix.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/184/simulator/engine/solvers/lib_Claude/rand_chen_matrix.m
+END
